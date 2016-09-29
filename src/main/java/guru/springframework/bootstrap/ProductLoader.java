@@ -25,22 +25,24 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
 
-        Product shirt = new Product();
-        shirt.setDescription("Spring Framework Guru Shirt");
-        shirt.setPrice(new BigDecimal("18.95"));
-        shirt.setImageUrl("https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_shirt-rf412049699c14ba5b68bb1c09182bfa2_8nax2_512.jpg");
-        shirt.setProductId("235268845711068308");
-        productRepository.save(shirt);
+        Product product = new Product();
+        product.setRenderingEngine("Misc");
+        product.setPlatform("Kali Linux");
+        product.setEngineVersion(new BigDecimal("18.95"));
+        product.setCssGrade("TestCSSGrade");
+        product.setBrowser("Mozilla FireFox");
+        productRepository.save(product);
 
-        log.info("Saved Shirt - id: " + shirt.getId());
+        log.info("Saved product - id: " + product.getId());
 
-        Product mug = new Product();
-        mug.setDescription("Spring Framework Guru Mug");
-        mug.setImageUrl("https://springframework.guru/wp-content/uploads/2015/04/spring_framework_guru_coffee_mug-r11e7694903c348e1a667dfd2f1474d95_x7j54_8byvr_512.jpg");
-        mug.setProductId("168639393495335947");
-        mug.setPrice(new BigDecimal("11.95"));
-        productRepository.save(mug);
+        Product product2 = new Product();
+        product2.setRenderingEngine("Misc");
+        product2.setPlatform("Windows");
+        product2.setCssGrade("TestCSSGrade2");
+        product2.setBrowser("Google Chrome");
+        product2.setEngineVersion(new BigDecimal("11.95"));
+        productRepository.save(product2);
 
-        log.info("Saved Mug - id:" + mug.getId());
+        log.info("Saved product2 - id:" + product2.getId());
     }
 }

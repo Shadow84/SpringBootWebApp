@@ -9,28 +9,28 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Version
-    private Integer version;
+    private String renderingEngine;
 
-    private String productId;
-    private String description;
-    private String imageUrl;
-    private BigDecimal price;
+    private String browser;
+    private String platform;
+    private String cssGrade;
+    private BigDecimal engineVersion;
 
-    public String getDescription() {
-        return description;
+
+    public String getPlatform() {
+        return platform;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setPlatform(String platform) {
+        this.platform = platform;
     }
 
-    public Integer getVersion() {
-        return version;
+    public String getRenderingEngine() {
+        return renderingEngine;
     }
 
-    public void setVersion(Integer version) {
-        this.version = version;
+    public void setRenderingEngine(String renderingEngine) {
+        this.renderingEngine = renderingEngine;
     }
 
     public Integer getId() {
@@ -41,27 +41,27 @@ public class Product {
         this.id = id;
     }
 
-    public String getProductId() {
-        return productId;
+    public String getBrowser() {
+        return browser;
     }
 
-    public void setProductId(String productId) {
-        this.productId = productId;
+    public void setBrowser(String browser) {
+        this.browser = browser;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getCssGrade() {
+        return cssGrade;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setCssGrade(String cssGrade) {
+        this.cssGrade = cssGrade;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public BigDecimal getEngineVersion() {
+        return engineVersion;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setEngineVersion(BigDecimal engineVersion) {
+        this.engineVersion = engineVersion;
     }
 }
