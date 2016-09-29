@@ -26,7 +26,7 @@ public class ProductRestController {
         return productService.getProductById(id);
     }
 
-    @RequestMapping(value = "rest/product/edit/{id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "rest/product/{id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Product edit(@RequestBody Product product){
         return productService.saveProduct(product);
     }
@@ -36,7 +36,7 @@ public class ProductRestController {
         productService.saveProduct(product);
     }
 
-    @RequestMapping(value = "rest/product/delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "rest/product/{id}", method = RequestMethod.DELETE)
     public void delete(@PathVariable Integer id){
         productService.deleteProduct(id);
     }
