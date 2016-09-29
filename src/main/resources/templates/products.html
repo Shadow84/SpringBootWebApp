@@ -23,7 +23,7 @@
                 <th>Delete</th>
             </tr>
             <tr th:each="product : ${products}">
-                <td th:text="${product.id}"><a href="/product/${product.id}">Id</a></td>
+                <td><a th:text="${product.id}" th:href="@{|/product/${product.id}|}"></a></td>
                 <td th:text="${product.renderingEngine}">Product Id</td>
                 <td th:text="${product.browser}">Product Id</td>
                 <td th:text="${product.platform}">descirption</td>
