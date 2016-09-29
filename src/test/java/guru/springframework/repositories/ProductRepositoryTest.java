@@ -29,9 +29,11 @@ public class ProductRepositoryTest {
     public void testSaveProduct(){
         //setup product
         Product product = new Product();
-        product.setPlatform("Spring Framework Guru Shirt");
+        product.setRenderingEngine("Misc");
+        product.setPlatform("Kali Linux");
         product.setEngineVersion(new BigDecimal("18.95"));
-        product.setBrowser("1234");
+        product.setCssGrade("TestCSSGrade");
+        product.setBrowser("Mozilla FireFox");
 
         //save product, verify has ID value after save
         assertNull(product.getId()); //null before save
