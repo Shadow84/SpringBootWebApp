@@ -32,7 +32,7 @@ public class ProductRestController {
     }
 
     @RequestMapping(value = "rest/product", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void saveProduct(Product product){
+    public void saveProduct(@RequestBody Product product){
         productService.saveProduct(product);
     }
 
