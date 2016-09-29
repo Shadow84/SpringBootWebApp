@@ -1,7 +1,7 @@
-package guru.springframework.services;
+package com.khomenko.services;
 
 
-import guru.springframework.domain.Product;
+import com.khomenko.domain.Product;
 
 public interface ProductService {
     Iterable<Product> listAllProducts();

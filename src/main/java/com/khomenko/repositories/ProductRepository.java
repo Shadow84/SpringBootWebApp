@@ -1,6 +1,6 @@
-package guru.springframework.repositories;
+package com.khomenko.repositories;
 
-import guru.springframework.domain.Product;
+import com.khomenko.domain.Product;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ProductRepository extends CrudRepository<Product, Integer>{

@@ -1,7 +1,7 @@
-package guru.springframework.controllers;
+package com.khomenko.controllers;
 
-import guru.springframework.domain.Product;
-import guru.springframework.services.ProductService;
+import com.khomenko.domain.Product;
+import com.khomenko.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

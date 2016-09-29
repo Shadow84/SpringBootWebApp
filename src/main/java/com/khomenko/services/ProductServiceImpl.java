@@ -1,7 +1,7 @@
-package guru.springframework.services;
+package com.khomenko.services;
 
-import guru.springframework.domain.Product;
-import guru.springframework.repositories.ProductRepository;
+import com.khomenko.domain.Product;
+import com.khomenko.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

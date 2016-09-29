@@ -1,7 +1,7 @@
-package guru.springframework.repositories;
+package com.khomenko.repositories;
 
-import guru.springframework.configuration.RepositoryConfiguration;
-import guru.springframework.domain.Product;
+import com.khomenko.domain.Product;
+import com.khomenko.configuration.RepositoryConfiguration;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
