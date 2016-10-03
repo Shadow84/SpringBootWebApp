@@ -26,12 +26,12 @@ public class ProductRestController {
         return productService.getProductById(id);
     }
 
-    @RequestMapping(value = "rest/product/{id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "rest/product/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Product edit(@RequestBody Product product){
         return productService.saveProduct(product);
     }
 
-    @RequestMapping(value = "rest/product", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "rest/product", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void saveProduct(@RequestBody Product product){
         productService.saveProduct(product);
     }
